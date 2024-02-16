@@ -25,11 +25,13 @@ setAlert(null);
       { setMode('dark')
       document.body.style.backgroundColor = "#B4B4B8";
       showAlert("dark mode has been enabled", "success");
+      document.title = 'TextUtility - Dark Mode';
     }
     else
     { setMode('light')
     document.body.style.backgroundColor = "#E0F4FF"
     showAlert("light mode has been enabled", "success");
+    document.title = 'TextUtility - Light Mode';
   }
 
   }
