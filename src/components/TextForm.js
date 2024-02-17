@@ -43,15 +43,15 @@ const handleExtraSpace = () =>{
   <label htmlFor="exampleFormControlTextarea1" className="form-label"></label>
   <textarea className="form-control" value={text} onChange = {handleOnChange} style={{backgroundColor : props.mode==="dark" ? 'beige': "#E3F4F4"}} id="exampleFormControlTextarea1" rows="8"></textarea>
 </div>
-<button className='btn btn-success mx-2' onClick={handleUpperCaseClick}>Convert to UpperCase</button>
-<button className='btn btn-success mx-2' onClick={handleLowerCaseClick}>Convert to LowerCase</button>
-<button className='btn btn-success mx-2' onClick={handleClearText}>Clear Text</button>
-<button className='btn btn-success mx-2' onClick={handleCopyText}>Copy Text</button>
-<button className='btn btn-success mx-2' onClick={handleExtraSpace}>Remove Extra Space</button>
+<button className='btn btn-success mx-2 my-2' onClick={handleUpperCaseClick}>Convert to UpperCase</button>
+<button className='btn btn-success mx-2 my-2' onClick={handleLowerCaseClick}>Convert to LowerCase</button>
+<button className='btn btn-success mx-2 my-2' onClick={handleClearText}>Clear Text</button>
+<button className='btn btn-success mx-2 my-2' onClick={handleCopyText}>Copy Text</button>
+<button className='btn btn-success mx-2 my-2' onClick={handleExtraSpace}>Remove Extra Space</button>
     </div>
 <div className='container my-2'>
 <h6>Text Summary</h6>
-    <p>{text.split(" ").length} words and {text.length} characters</p>
+    <p>{text.split(" ").filter((element)=>{return element.length !== 0}).length} words and {text.length} characters</p>
     <h6>Preview</h6>
     <p>{text}</p>
 </div>
