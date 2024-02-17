@@ -28,13 +28,13 @@ setAlert(null);
       { setMode('dark')
       document.body.style.backgroundColor = "#B4B4B8";
       showAlert("dark mode has been enabled", "success");
-      document.title = 'TextUtility - Dark Mode';
+      // document.title = 'TextUtility - Dark Mode';
     }
     else
     { setMode('light')
     document.body.style.backgroundColor = "#E0F4FF"
     showAlert("light mode has been enabled", "success");
-    document.title = 'TextUtility - Light Mode';
+    // document.title = 'TextUtility - Light Mode';
   }
 
   }
@@ -53,7 +53,7 @@ setAlert(null);
           
           
           
-          <Route exact path="/" element={<TextForm heading = "Text Analyser " mode = {mode}/>}/>
+          <Route exact path="/" element={<TextForm heading = "Try TextUtility - word counter, character counter, remove extra spaces " mode = {mode}/>}/>
           
             
          
