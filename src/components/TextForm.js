@@ -21,9 +21,8 @@ export default function TextForm(props) {
     }
 
 const handleCopyText = () => {
-    var newtext = document.getElementById("exampleFormControlTextarea1");
-    newtext.select();
-    navigator.clipboard.writeText(newtext.value);
+   
+    navigator.clipboard.writeText(text);
     document.getSelection().removeAllRanges();
     
 }
